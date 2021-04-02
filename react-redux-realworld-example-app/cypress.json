@@ -1,3 +1,7 @@
 {
-    "integrationFolder": "cypress/e2e"
+    "integrationFolder": "cypress/e2e",
+    "retries":{
+        "runMode": 0,
+        "openMode": 0
+    }
 }
