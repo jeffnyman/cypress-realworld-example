@@ -13,8 +13,12 @@ describe("Authentication Process: Sign Up and Log In", () => {
         // Cypress server. Then, with the server, we look for all
         // POST requests that hit a user request URL that has the
         // text "users" in it.
-        cy.server()
-        cy.route("POST", "**/users").as("new_user")
+        // cy.server()
+        // cy.route("POST", "**/users").as("new_user")
+
+        // Cypress versions 6.x and greater use intercept instead of
+        // the above.
+        cy.intercept("POST", "**/users").as("new_user")
 
         cy.get(".nav-link").contains("Sign up").click()
         cy.get("[placeholder='Username']").type(username)
@@ -24,15 +28,16 @@ describe("Authentication Process: Sign Up and Log In", () => {
 
         cy.wait("@new_user")
         cy.get("@new_user").should((xhr) => {
-            expect(xhr.status).to.eq(200)
+            expect(xhr.response.statusCode).to.eq(200)
             expect(xhr.request.body.user.username).to.eq(username)
             expect(xhr.request.body.user.email).to.eq(email)
         })
     })
 
     it("allows login with user who signed up", () => {
-        cy.server()
-        cy.route("GET", "**/tags", "fixture:popular_tags.json")
+        // cy.server()
+        // cy.route("GET", "**/tags", "fixture:popular_tags.json")
+        cy.intercept("GET", "**/tags", { fixture: "popular_tags.json" })
 
         cy.get(".nav-link").contains("Sign in").click()
         cy.get("[placeholder='Email']").type(email)
@@ -44,8 +49,9 @@ describe("Authentication Process: Sign Up and Log In", () => {
     })
 
     it("allows viewing of user feed when signed in", () => {
-        cy.server()
-        cy.route("GET", "**/articles/feed*", "fixture:mock_feed.json").as("articles")
+        // cy.server()
+        // cy.route("GET", "**/articles/feed*", "fixture:mock_feed.json").as("articles")
+        cy.intercept("GET", "**/articles/feed*", { fixture: "mock_feed.json" }).as("articles")
 
         cy.get(".nav-link").contains("Sign in").click()
         cy.get("[placeholder='Email']").type(email)
