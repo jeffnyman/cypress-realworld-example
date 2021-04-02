@@ -42,4 +42,16 @@ describe("Authentication Process: Sign Up and Log In", () => {
 
         cy.get(".tag-list").should("contain", "automation").and("contain", "cypress")
     })
+
+    it("allows viewing of user feed when signed in", () => {
+        cy.server()
+        cy.route("GET", "**/articles/feed*", "fixture:mock_feed.json").as("articles")
+
+        cy.get(".nav-link").contains("Sign in").click()
+        cy.get("[placeholder='Email']").type(email)
+        cy.get("[placeholder='Password']").type(password)
+        cy.get("button").contains("Sign in").click()
+
+        cy.wait("@articles")
+    })
 })

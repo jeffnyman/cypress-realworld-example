@@ -1,0 +1,197 @@
+{
+    "articles": [
+        {
+            "title": "From api",
+            "slug": "from-api-rcnk7a",
+            "body": "body apis req",
+            "createdAt": "2021-03-31T19:08:44.701Z",
+            "updatedAt": "2021-03-31T19:08:44.701Z",
+            "tagList": [],
+            "description": "apis req",
+            "author": {
+                "username": "alex_may",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My Cypress article",
+            "slug": "my-cypress-article-lbxt5l",
+            "body": "This article is created by createArticle Cypress command",
+            "createdAt": "2021-03-31T19:03:45.662Z",
+            "updatedAt": "2021-03-31T19:03:45.662Z",
+            "tagList": [
+                "simple",
+                "test-automation",
+                "cypress"
+            ],
+            "description": "https://github.com/helenanull/cypress-example",
+            "author": {
+                "username": "cy784283858",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My Cypress article",
+            "slug": "my-cypress-article-bh09d4",
+            "body": "This is modified body",
+            "createdAt": "2021-03-31T19:03:30.910Z",
+            "updatedAt": "2021-03-31T19:03:34.030Z",
+            "tagList": [
+                "simple",
+                "test-automation",
+                "cypress"
+            ],
+            "description": "https://github.com/helenanull/cypress-example",
+            "author": {
+                "username": "cy916889954",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 1
+        },
+        {
+            "title": "My post title",
+            "slug": "my-post-title-bx8x6x",
+            "body": "Cypress is so cool awyeah! https://github.com/helenanull/cypress-example",
+            "createdAt": "2021-03-31T19:03:28.019Z",
+            "updatedAt": "2021-03-31T19:03:28.019Z",
+            "tagList": [
+                "test-automation",
+                "cypress"
+            ],
+            "description": "Cypress",
+            "author": {
+                "username": "cy309545998",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My post title",
+            "slug": "my-post-title-eazibv",
+            "body": "Cypress is so cool awyeah! https://github.com/helenanull/cypress-example",
+            "createdAt": "2021-03-31T19:03:19.588Z",
+            "updatedAt": "2021-03-31T19:03:19.588Z",
+            "tagList": [],
+            "description": "Cypress",
+            "author": {
+                "username": "cy757829082",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My post title",
+            "slug": "my-post-title-og8gm3",
+            "body": "Cypress is so cool awyeah! https://github.com/helenanull/cypress-example",
+            "createdAt": "2021-03-31T19:03:07.891Z",
+            "updatedAt": "2021-03-31T19:03:07.891Z",
+            "tagList": [],
+            "description": "Cypress",
+            "author": {
+                "username": "cy882058202",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My Cypress article",
+            "slug": "my-cypress-article-xn7m5p",
+            "body": "This article is created by createArticle Cypress command",
+            "createdAt": "2021-03-31T18:57:58.476Z",
+            "updatedAt": "2021-03-31T18:57:58.476Z",
+            "tagList": [
+                "simple",
+                "test-automation",
+                "cypress"
+            ],
+            "description": "https://github.com/helenanull/cypress-example",
+            "author": {
+                "username": "cy514925478",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My Cypress article",
+            "slug": "my-cypress-article-zjvbr4",
+            "body": "This is modified body",
+            "createdAt": "2021-03-31T18:57:42.827Z",
+            "updatedAt": "2021-03-31T18:57:46.016Z",
+            "tagList": [
+                "simple",
+                "test-automation",
+                "cypress"
+            ],
+            "description": "https://github.com/helenanull/cypress-example",
+            "author": {
+                "username": "cy832985630",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 1
+        },
+        {
+            "title": "My post title",
+            "slug": "my-post-title-hgjhpn",
+            "body": "Cypress is so cool awyeah! https://github.com/helenanull/cypress-example",
+            "createdAt": "2021-03-31T18:57:40.255Z",
+            "updatedAt": "2021-03-31T18:57:40.255Z",
+            "tagList": [
+                "test-automation",
+                "cypress"
+            ],
+            "description": "Cypress",
+            "author": {
+                "username": "cy224767316",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "My post title",
+            "slug": "my-post-title-gvwc66",
+            "body": "Cypress is so cool awyeah! https://github.com/helenanull/cypress-example",
+            "createdAt": "2021-03-31T18:57:31.482Z",
+            "updatedAt": "2021-03-31T18:57:31.482Z",
+            "tagList": [],
+            "description": "Cypress",
+            "author": {
+                "username": "cy004855649",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        }
+    ],
+    "articlesCount": 500
+}
