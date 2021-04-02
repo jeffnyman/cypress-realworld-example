@@ -31,10 +31,15 @@ describe("Authentication Process: Sign Up and Log In", () => {
     })
 
     it("allows login with user who signed up", () => {
+        cy.server()
+        cy.route("GET", "**/tags", "fixture:popular_tags.json")
+
         cy.get(".nav-link").contains("Sign in").click()
         cy.get("[placeholder='Email']").type(email)
         cy.get("[placeholder='Password']").type(password)
         cy.get("button").contains("Sign in").click()
         cy.get(".user-pic").should("be.visible")
+
+        cy.get(".tag-list").should("contain", "automation").and("contain", "cypress")
     })
 })
